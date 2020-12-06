@@ -14,7 +14,18 @@ function setupBoard(gridSize) {
         container.appendChild(content);
     }
 
+    const button = document.querySelector('button');
+    button.addEventListener('click', () => {
+        removeBoard();
+    })
 
+
+}
+
+function removeBoard() {
+    const container = document.querySelector('#container');
+    container.innerHTML = "";
+    setupBoard(16);
 }
 
 setupBoard(16);

@@ -1,6 +1,19 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: black;
+    
+}
+
+#main-game {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+}
+
+button {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #container {

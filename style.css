@@ -1,18 +1,22 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: black;
-    
+    color: white;
 }
 
 #main-game {
     display: flex;           /* establish flex container */
     flex-direction: column;  /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
 }
 
 button {
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;    
+}
+
+input {
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
@@ -22,13 +26,12 @@ button {
     display: grid;
     grid-template-columns: repeat(var(--columns-row), 1fr);
     grid-template-rows: repeat(var(--columns-row), 1fr);
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 .box {
     padding: 1px;
-    background-color: #EFEFEF;
-    width: 25px;
-    height: 25px;
+    background-color: #445543;
+    border: 1px solid rgba(255, 187, 0, 0.678);
 }
